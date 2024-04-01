@@ -1,0 +1,11 @@
+<header-component (changeComponent)="changeCurrentComponent($event)"></header-component>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="currentComponent ==='recipes'"></app-recipes>
+      <app-shopping-list *ngIf="currentComponent ==='shopping'"></app-shopping-list>
+
+    </div>
+  </div>
+</div>
